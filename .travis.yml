@@ -18,6 +18,8 @@ matrix:
       env: TOXENV="flake8,flake8-docs"
 
     - python: '3.8'
+      aarch:
+          - arm64
       env:
         - TOXENV="py38-linux"
       dist: bionic
