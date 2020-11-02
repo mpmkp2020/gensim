@@ -40,7 +40,7 @@ matrix:
 install:
   - pip install tox
   - sudo apt-get install -y gdb
-  - pip install Cython
+  - python -m pip install --upgrade pip
 
 
 before_script:
