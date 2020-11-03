@@ -47,8 +47,8 @@ before_script:
   - ulimit -c unlimited -S  # enable core dumps
 
 
-script: tox -vv
-
+script: #tox -vv
+  - Cython --version
 
 after_failure:
   - pwd
