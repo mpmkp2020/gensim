@@ -48,7 +48,7 @@ before_script:
 
 
 script: #tox -vv
-  - Cython --version
+  - cython --version
 
 after_failure:
   - pwd
