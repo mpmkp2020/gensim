@@ -40,9 +40,10 @@ matrix:
 
 install:
   - pip install tox
-  - which python
+  - which pip
+  - whereis pip
+  - pip --version
   - sudo apt-get install -y gdb
-  - pip install Cython --install-option="--no-cython-compile"
 
 
 before_script:
@@ -50,7 +51,7 @@ before_script:
 
 
 script: 
-  - tox -vv
+  #- tox -vv
   - cython --version
 
 after_failure:
