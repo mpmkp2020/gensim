@@ -43,6 +43,7 @@ install:
   - which pip
   - whereis pip
   - pip --version
+  - /usr/local/bin/pip --version
   - sudo apt-get install -y gdb
 
 
